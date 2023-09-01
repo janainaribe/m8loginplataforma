@@ -1,4 +1,4 @@
-            #language: pt
+                       #language: pt
 
             Funcionalidade: Tela de login
             Como cliente da EBAC-SHOP
@@ -24,8 +24,7 @@
             Então deve ser exibida a mensagem de alerta "Usuário ou senha inválidos"
 
             Esquema do Cenário: Autenticar múltiplos usuários
-            Quando eu digitar o <usuario>
-            E a <senha>
+            Quando eu digitar o <usuario>, <senha>
             Então deve exibir a <mensagem> de sucesso
 
             Exemplos:
@@ -33,5 +32,3 @@
             | "janaina@ebac.com.br" | "2023" | "Olá, Janaina"               |
             | "xxxx@ebac.com.br"    | "2023" | "Usuário ou senha inválidos" |
             | "janaina@ebac.com.br" | "2020" | "Usuário ou senha inválidos" |
-
-
